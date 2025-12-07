@@ -1,5 +1,6 @@
 import React from "react";
-import GetStats from "./getStats";
+import GetStats from "./GetStats.js";
+import GetAllTimeStats from "./AllTimeStats.js";
 
 function App() {
   const appStyle = {

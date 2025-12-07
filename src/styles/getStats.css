@@ -15,6 +15,93 @@
 
 .getstats-error {
   font-size: 24px;
+  color: red;
+}
+
+.getstats-controls {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.getstats-dropdown {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.getstats-dropdown:hover {
+  background-color: #f0f0f0;
+}
+
+.getstats-sort-controls {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.getstats-mode-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.getstats-mode-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #ffd610;
+  color: #000;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.getstats-mode-btn:hover {
+  background-color: #ffed4e;
+}
+
+.getstats-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.mode-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.getstats-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #ffd610;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.getstats-btn:hover {
+  background-color: #ffed4e;
+}
+
+.getstats-btn:active {
+  background-color: #e6c200;
 }
 
 .getstats-list {

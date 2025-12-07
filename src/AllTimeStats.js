@@ -112,10 +112,6 @@ function GetStats() {
   };
 
   return (
-    <>
-    {allTime ? (
-      <GetAllTimeStats />
-    ) : (
     <div className="getstats-container">
       <h3>Kärpät players</h3>
       
@@ -166,8 +162,10 @@ function GetStats() {
       <p className="mode-text">{allTime ? "All-time" : `${selectedSeason - 1}-${selectedSeason}`} {regularSeason ? "Regular season" : "Playoffs"}</p>
 
       {/* Show all-time stats if allTime is true */}
-      
-        
+      {allTime ? (
+        <GetAllTimeStats />
+      ) : (
+        <>
           {/* If loading is true, show the loading spinner animation */}
           {loading && <p className="getstats-loading"> <OrbitProgress color="#ffd610" size="medium" text="" textColor="" /> </p>}
           {/* If there was an error, display the error message */}
@@ -189,9 +187,9 @@ function GetStats() {
                 ))}
             </div>
           )}
+        </>
+      )}
     </div>
-    )}
-    </>
   );
 }
 
