@@ -59,7 +59,7 @@ function GetStats() {
     // Fetch the selected season data - use 'runkosarja' for regular season, 'playoffs' for playoffs
     const mode = regularSeason ? 'runkosarja' : 'playoffs';
     fetchStats(selectedSeason, mode);
-  }, [regularSeason, allTime]); // Re-fetch when regularSeason changes
+  }, []); // Re-fetch when regularSeason changes
 
   // Handler function for sorting by different stats
   const handleSort = (sortBy) => {
