@@ -112,6 +112,7 @@
   padding: 15px;
   margin-top: 20px;
   flex: 1;
+  background-color: #fffffe;
 }
 
 .getstats-player {
@@ -119,3 +120,4 @@
   padding-bottom: 10px;
   border-bottom: 2px solid #eee;
 }
+
