@@ -58,7 +58,7 @@ function GetStats({ allTime, onToggleAllTime }) {
     // Fetch the selected season data - use 'runkosarja' for regular season, 'playoffs' for playoffs
     const mode = regularSeason ? 'runkosarja' : 'playoffs';
     fetchStats(selectedSeason, mode);
-  }, []); // Re-fetch when regularSeason changes
+  }, [regularSeason, selectedSeason]); // Re-fetch when regularSeason changes
 
   // Handler for sort dropdown change
   const handleSortChange = (e) => {
